@@ -3,8 +3,8 @@
  * main - entry point
  * Description: prints a text using puts()
  * Return: returns zero for successful execution
- */ 
-int main(void) 
+ */
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 

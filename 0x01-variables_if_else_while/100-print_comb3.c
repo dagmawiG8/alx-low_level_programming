@@ -16,8 +16,8 @@ int main(void)
 	{
 		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			putchar(digit1);
-			putchar(digit2);
+			putchar(digit1 + '0');
+			putchar(digit2 + '0');
 		}
 	}
 	putchar('\n');

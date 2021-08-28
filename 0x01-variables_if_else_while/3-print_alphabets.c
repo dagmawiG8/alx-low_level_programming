@@ -3,8 +3,8 @@
 
 /**
  * main - entry
- * Description:
- * Return:
+ * Description: sorts lowercase then uppercase letters
+ * Return: returns zero after successfully printing them all
  */
 
 int main(void)
@@ -20,6 +20,7 @@ int main(void)
         {
         putchar(letter);
         }
+	putchar("\n");
 
 	return (0);
 }

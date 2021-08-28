@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - 
- * Description:
- * Return:
+ * main - entry
+ * Description: sorts in alphabetical order [lowercase]
+ * Return: returns zero after printing all
  */
 
 int main(void)
@@ -15,6 +15,7 @@ int main(void)
 	{
 	putchar(letter);
 	}
+	putchar("\n");
 
 	return (0);
 }

@@ -5,7 +5,7 @@
 /**
  * main - entry point
  * Description: testing whether randomly generated number is negative or not
- * Return: returns zero  
+ * Return: returns zero
  */
 
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
+
 	if (n < 0)
 	{
 		printf("%d is negative\n", n);

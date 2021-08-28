@@ -3,7 +3,7 @@
 
 /**
  * main - entry
- * Description: sorts in alphabetical order [lowercase]
+ * Description: sorts in alphabetical order [lowercase-descending]
  * Return: returns zero after printing all
  */
 
@@ -11,7 +11,7 @@ int main(void)
 {
 	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
 	putchar(letter);
 	}

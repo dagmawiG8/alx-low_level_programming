@@ -3,18 +3,17 @@
 
 /**
  * main - entry
- * Description: sorts in alphabetical order [lowercase]
+ * Description: sorts in increasing order [single digits]
  * Return: returns zero after printing all
  */
 
 int main(void)
 {
-	char letter;
+	int digit;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-	putchar(letter);
-	}
+	for (digit = 0; digit < 10; digit++)
+		putchar(digit + '0');
+	
 	putchar('\n');
 
 	return (0);

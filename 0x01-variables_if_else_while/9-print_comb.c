@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(digit + '0');
 
-		while (digit != 9)
+		if (digit != 9)
 		{
 			putchar(',');
 			putchar(' ');

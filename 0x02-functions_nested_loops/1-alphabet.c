@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - entry
+ * print_alphabet - a module that prints the alphabet
  * Desciption: printing alphabets.
  * Return: On success 0.
  */

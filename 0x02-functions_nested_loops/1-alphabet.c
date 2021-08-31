@@ -7,17 +7,19 @@
  * Return: On success 0.
  */
 
+void print_alphabet(void)
+{
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		_putchar(letter);	
+	}
+}
+
 int main (void)
 {
-	void print_alphabet(void)
-	{
-		char letter;
-
-		for (letter = 'a'; letter <= 'z'; letter++)
-		{
-			_putchar(letter);	
-		}
-	}
+	print_alphabet();
 
 	return (0);
 }

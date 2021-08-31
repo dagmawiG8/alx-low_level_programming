@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - entry
@@ -18,6 +19,7 @@ int main(void)
 	_putchar('t');
 	_putchar('o');
 	_putchar('n');
+	_putchar('\n');
 
 	return (0);
 }

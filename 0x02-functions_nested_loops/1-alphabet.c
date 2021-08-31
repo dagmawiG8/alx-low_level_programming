@@ -16,10 +16,3 @@ void print_alphabet(void)
 		_putchar(letter);	
 	}
 }
-
-int main (void)
-{
-	print_alphabet();
-
-	return (0);
-}

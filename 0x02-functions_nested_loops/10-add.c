@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * times_table - adds two integers
+ * add - adds two integers
  * @x: The character to add on
  * @y: The charater to be added
  * Description: displaying sum of two numbers

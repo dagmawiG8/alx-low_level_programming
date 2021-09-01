@@ -10,7 +10,7 @@
 
 void print_to_98(int n)
 {
-	int recursion;
+	int recursion, recursion2;
 
 	if (n < 98)
 	{
@@ -18,7 +18,7 @@ void print_to_98(int n)
 		{
 			_putchar(recursion + '0');
 
-			while (recursion != 98)
+			if (recursion != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -31,7 +31,7 @@ void print_to_98(int n)
 		{
 			_putchar(recursion + '0');
 
-			while (recursion != 98)
+			if (recursion != 98)
 			{
 				_putchar(',');
 				_putchar(' ');

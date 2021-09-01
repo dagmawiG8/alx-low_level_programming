@@ -16,16 +16,19 @@ void times_table(void)
 		for (y = 0; y < 10; y++)
 		{
 			printf("%d", (x * y));
-
-			if ((x * y) <= 9)
+			
+			if (y != 9)
 			{
-				printf(",");
-				printf("  ");
-			}
-			else if ((x * y) > 9)
-			{
-				printf(",");
-				printf(" ");
+				if ((x * y) <= 9)
+				{
+					printf(",");
+					printf("  ");
+				}
+				else if ((x * y) > 9)
+				{
+					printf(",");
+					printf(" ");
+				}
 			}
 		}
 		printf("\n");

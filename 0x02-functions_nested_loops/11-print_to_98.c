@@ -24,9 +24,8 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 		}
-		_putchar('\n');
 	}
-	else
+	else if (n > 98)
 	{
 		for (recursion = n; recursion >= 98; recursion--)
 		{
@@ -39,5 +38,11 @@ void print_to_98(int n)
 			}
 		}
 	}
+	else if (n == 98)
+	{
+		_putchar(n + '0');
+	}
+
+	_putchar("\n");
 
 }

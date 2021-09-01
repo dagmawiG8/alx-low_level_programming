@@ -1,0 +1,32 @@
+#include <unistd.h>
+
+/**
+ * jackbauer - writes the character c to stdout
+ * 
+ * Description: 
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+void jackbauer(void)
+{
+	int w, x, y, z;
+
+	for (w = 0; w < 10; w++)
+	{
+		for (x = 0; x < 10; x++)
+		{
+			for (y = 0; y < 10; y++)
+			{
+				for (z = 0; z < 10; z++)
+				{
+					_putchar('w' + 0);
+					_putchar('x' + 0);
+					_putchar(':');
+					_putchar('y' + 0);
+					_putchar('z' + 0);
+				}
+			}
+		}
+	}
+}

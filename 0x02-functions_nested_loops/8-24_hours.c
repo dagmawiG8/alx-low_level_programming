@@ -2,14 +2,14 @@
 #include <unistd.h>
 
 /**
- * jackbauer - writes the character c to stdout
+ * jack_bauer - writes the character c to stdout
  * 
  * Description: 
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-void jackbauer(void)
+void jack_bauer(void)
 {
 	int w, x, y, z;
 

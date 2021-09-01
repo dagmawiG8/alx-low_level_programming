@@ -16,12 +16,12 @@ void print_to_98(int n)
 	{
 		for (recursion = n; recursion <= 98; recursion++)
 		{
-			_putchar(recursion + '0');
+			printf("%d", recursion);
 
 			if (recursion != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(",");
+				printf(" ");
 			}
 		}
 	}
@@ -29,12 +29,12 @@ void print_to_98(int n)
 	{
 		for (recursion = n; recursion >= 98; recursion--)
 		{
-			_putchar(recursion + '0');
+			printf("%d", recursion);
 
 			if (recursion != 98)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(",");
+				printf(" ");
 			}
 		}
 	}
@@ -43,6 +43,6 @@ void print_to_98(int n)
 		_putchar(n + '0');
 	}
 
-	_putchar('\n');
+	printf("\n");
 
 }

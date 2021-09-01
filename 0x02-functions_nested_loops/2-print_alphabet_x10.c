@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - a module that prints the alphabet
+ * print_alphabet_x10 - a module that prints the alphabet
  * Desciption: printing alphabets 10 times
  * Return: On success 0.
  */
 
-void print_alphabet_x10 (void)
+void print_alphabet_x10(void)
 {
-        char letter;
+	char letter;
 	int count = 10;
 
 	while (count > 0)

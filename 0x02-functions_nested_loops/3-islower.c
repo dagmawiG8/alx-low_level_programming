@@ -4,11 +4,12 @@
 
 /**
  * _islower - test for lowercase
+ * c - the character to be tested
  * Desciption: printing alphabets 10 times
  * Return: On success 1.
  */
 
 int _islower(int c)
 {
-	return islower(c);
+	return (islower(c));
 }

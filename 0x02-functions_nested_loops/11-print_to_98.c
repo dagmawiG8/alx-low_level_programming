@@ -10,7 +10,7 @@
 
 void print_to_98(int n)
 {
-	int recursion, recursion2;
+	int recursion;
 
 	if (n < 98)
 	{

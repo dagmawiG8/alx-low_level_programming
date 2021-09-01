@@ -1,9 +1,7 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
  * times_table - prints factors of 9
- * @c: The character to print
  * Description: displaying table of 9s table
  * Return: no return value
  */

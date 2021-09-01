@@ -16,8 +16,18 @@ void times_table(void)
 		for (y = 0; y < 10; y++)
 		{
 			printf("%d", (x * y));
-			printf(",");
-			printf(" ");
+
+			if ((x * y) <= 9)
+			{
+				printf(",");
+				printf(" ");
+			}
+			else if ((x * y) > 9)
+			{
+				printf(",");
+				printf(" ");
+				printf(" ");
+			}
 		}
 		printf("\n");
 	}

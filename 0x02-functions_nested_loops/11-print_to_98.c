@@ -4,7 +4,7 @@
 /**
  * print_to_98 - prints n to 98
  * @n: integer argument
- * Description: 
+ * Description:
  * Return: returns nothing
  */
 
@@ -12,9 +12,32 @@ void print_to_98(int n)
 {
 	int recursion;
 
-	for (recursion = n; recursion <= 98; recursion++)
+	if (n < 98)
 	{
-		_putchar(recursion);
+		for (recursion = n; recursion <= 98; recursion++)
+		{
+			_putchar(recursion);
+
+			while (recursion != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else 
+	{
+		for (recursion = n; recursion >= 98; recursion--)
+		{
+			_putchar(recursion);
+
+			while (recursion != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+        }
+	}
+
 }

@@ -20,12 +20,11 @@ void times_table(void)
 			if ((x * y) <= 9)
 			{
 				printf(",");
-				printf(" ");
+				printf("  ");
 			}
 			else if ((x * y) > 9)
 			{
 				printf(",");
-				printf(" ");
 				printf(" ");
 			}
 		}

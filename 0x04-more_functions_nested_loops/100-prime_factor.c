@@ -3,9 +3,10 @@
 
 /**
  * main - finds and prints the largest prime factor of the number 612852475143
- * followed by a new line
+ * max - gqtg
  * Return: Always 0 (Success)
  */
+
 int max(void)
 {
 	long int n;

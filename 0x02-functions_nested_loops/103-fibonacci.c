@@ -13,7 +13,7 @@ int main(void)
 	long int sum = 2; /* The first even */
 	long int next;
 
-	while (next < 4000,000)
+	while (next < 4000000)
 	{
 		next = a + b;
 

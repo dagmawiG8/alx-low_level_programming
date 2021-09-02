@@ -35,7 +35,7 @@ int max(void)
 	}
 }
 
-int main
+int main(void)
 {
 	printf("%ld\n", max());
 

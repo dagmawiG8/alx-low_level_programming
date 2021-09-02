@@ -13,7 +13,7 @@ int main(void)
 	long int sum = 2; /* The first even */
 	long int next;
 
-        while (next < 4000)
+	while (next < 4000,000)
 	{
 		next = a + b;
 
@@ -21,11 +21,11 @@ int main(void)
 		{
 			sum += next;
 		}
-		
+
 		a = b;
 		b = next;
 	}
-	
+
 	printf("%ld", sum);
 	printf("\n");
 	return (0);

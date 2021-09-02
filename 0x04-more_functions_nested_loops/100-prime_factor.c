@@ -3,42 +3,38 @@
 
 /**
  * main - finds and prints the largest prime factor of the number 612852475143
- * max - gqtg
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 
-int max(void)
+int main(void)
 {
 	long int n;
 	long int max;
-	long int i, j;
-	long int counter;
+	long int i;
 
 	n = 612852475143;
+	max = -1;
 
-	for (i = 0; i <= n; i++)
+	while (n % 2 == 0)
 	{
-		if (n % i == 0)
+		max = 2;
+		n /= 2;
+	}
+
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
 		{
-			counter = 0;
-
-			for (j = 0; j <= i; j++)
-			{
-				if (i % j == 0)
-					counter++;
-			}
-
-			if(counter <= 2)
-			{
-				return (i);
-			}
+			max = i;
+			n = n / i;
 		}
 	}
-}
 
-int main(void)
-{
-	printf("%ld\n", max());
+	if (n > 2)
+		max = n;
+
+	printf("%ld\n", max);
 
 	return (0);
 }

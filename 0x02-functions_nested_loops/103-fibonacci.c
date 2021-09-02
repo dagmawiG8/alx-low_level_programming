@@ -26,7 +26,7 @@ int main(void)
 		b = next;
 	}
 	
-	pritnf("%ld", sum)
+	printf("%ld", sum)
 	printf("\n");
 	return (0);
 }

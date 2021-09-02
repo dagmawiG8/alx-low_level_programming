@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_number - prints an integer
@@ -7,16 +7,21 @@
 
 void print_number(int n)
 {
-	unsigned int intermediate;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		intermediate = -n;
+		n1 = -n;
 		_putchar('-');
 	} else
 	{
-		intermediate = n;
+		n1 = n;
 	}
 
-	_putchar(intermediate + '0');
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+
+	_putchar((n1 % 10) + '0');
 }

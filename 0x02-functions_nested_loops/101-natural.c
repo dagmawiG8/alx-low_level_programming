@@ -3,8 +3,8 @@
 
 /**
  * main - entry
- * Description:
- * Return:
+ * Description: computes the sum of all multiples of 3 and 5
+ * Return: returns 0
  */
 
 int main(void)
@@ -20,6 +20,6 @@ int main(void)
 		}
 	}
 
-	printf("%d \n", sum);
+	printf("%d", sum);
 	return (0);
 }

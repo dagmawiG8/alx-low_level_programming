@@ -28,13 +28,14 @@ void times_table(void)
 					printf(" ");
 					printf(" ");
 					printf(" ");
-
+					printf("%d", (x * y));
 				}
 				else if ((x * y) > 9)
 				{
 					printf(",");
 					printf(" ");
 					printf(" ");
+					printf("%d", (x * y));
 				}
 			}
 		}

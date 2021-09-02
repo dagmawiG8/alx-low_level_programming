@@ -11,13 +11,14 @@ int main(void)
 	int a = 1;
 	int b = 2;
 	int counter = 3;
+	int next = 0;
 
 	printf("%d, ", a);
         printf("%d, ", b);
 
 	while (counter <= 50)
 	{
-		next = a + b;
+		next += a + b;
 		a = b;
 		b = next;
 

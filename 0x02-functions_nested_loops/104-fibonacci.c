@@ -16,12 +16,12 @@ int main(void)
 	printf("%ld, ", a);
 	printf("%ld, ", b);
 
-	while (counter <= 98)
+	while (counter <= 95)
 	{
 		next = a + b;
 		printf("%ld", next);
 
-		if (counter != 98)
+		if (counter != 95)
 		{
 			printf(",");
 			printf(" ");

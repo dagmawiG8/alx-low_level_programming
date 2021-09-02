@@ -15,29 +15,40 @@ void print_times_table(int n)
         {
 		for (y = 0; y <= n; y++)
 		{
-			if (y == 0)
+			if (n <= 15 && n > 0)
 			{
-				printf("%d", (x * y));
-			}
+				if (y == 0)
+				{
+					printf("%d", (x * y));
+				}
 
-			else if (y != 0)
-			{
-				if ((x * y) < 10)
+				else if (y != 0)
 				{
-					printf(",");
-					printf(" ");
-					printf(" ");
-					printf("%d", (x * y));
-				}
-				else if ((x * y) >= 10)
-				{
-					printf(",");
-					printf(" ");
-					printf("%d", (x * y));
+					if ((x * y) < 10)
+					{
+						printf(",");
+						printf(" ");
+						printf(" ");
+						printf(" ");
+						printf("%d", (x * y));
+					}
+					else if ((x * y) >= 10 && (x * y) < 100)
+					{
+						printf(",");
+						printf(" ");
+						printf(" ");
+						printf("%d", (x * y));
+					}
+					else if((x * y) >= 100)
+					{
+						printf(",");
+						printf(" ");
+						printf("%d", (x * y));
+					}
 				}
 			}
+			printf("\n");
 		}
-		printf("\n");
 	}
 }
 

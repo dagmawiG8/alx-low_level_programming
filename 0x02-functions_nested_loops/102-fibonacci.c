@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	int a = 1;
-	int b = 2;
+	long int a = 1;
+	long int b = 2;
 	int counter = 1;
-	int next;
+	long int next;
 
 	printf("%d, ", a);
 	printf("%d, ", b);

@@ -13,13 +13,13 @@ int main(void)
 	int counter = 1;
 	long int next;
 
-	printf("%d, ", a);
-	printf("%d, ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 
 	while (counter <= 50)
 	{
 		next = a + b;
-		printf("%d, ", next);
+		printf("%ld, ", next);
 
 		a = b;
 		b = next;

@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * _islower - test for character or not
+ * _isalpha - test for character or not
  * @c: the character to be tested
  * Desciption: test for alphanumeric
  * Return: On success 1.

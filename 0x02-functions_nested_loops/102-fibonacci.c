@@ -10,7 +10,7 @@ int main(void)
 {
 	long int a = 1;
 	long int b = 2;
-	int counter = 1;
+	int counter = 3;
 	long int next;
 
 	printf("%ld, ", a);

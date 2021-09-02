@@ -4,6 +4,7 @@
  * print_number - prints an integer
  * @n: integer to be printed
  */
+
 void print_number(int n)
 {
 	unsigned int intermediate;
@@ -17,5 +18,5 @@ void print_number(int n)
 		intermediate = n;
 	}
 
-	print_number(n1 / 10);
+	_putchar(intermediate + '0');
 }

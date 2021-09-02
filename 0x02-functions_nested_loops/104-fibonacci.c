@@ -16,7 +16,7 @@ int main(void)
 	printf("%ld, ", a);
 	printf("%ld, ", b);
 
-	while (counter <= 100)
+	while (counter < 91)
 	{
 		next = a + b;
 		printf("%ld", next);

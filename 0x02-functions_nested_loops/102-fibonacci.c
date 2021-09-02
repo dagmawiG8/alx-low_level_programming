@@ -10,21 +10,22 @@ int main(void)
 {
 	int a = 1;
 	int b = 2;
-	int counter = 3;
+	int counter = 2;
 	int next = 0;
 
 	printf("%d, ", a);
-        printf("%d, ", b);
+	printf("%d, ", b);
 
 	while (counter <= 50)
 	{
 		next += a + b;
 		a = b;
 		b = next;
+		counter++;
 
 		printf("%d, ", next);
 	}
-	
+
 	printf("\n");
 	return (0);
 }

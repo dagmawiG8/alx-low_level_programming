@@ -19,10 +19,10 @@ int main(void)
 	while (counter <= 50)
 	{
 		next = a + b;
+		printf("%ld", next);
 
 		if (counter != 50)
 		{
-			printf("%ld", next);
 			printf(",");
 			printf(" ");
 		}

@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 
 /**
  * print_rev - checks for uppercase character
@@ -13,5 +14,4 @@ void print_rev(char *s)
 
 	strrev(s);
 	_putchar('\n');
-
 }

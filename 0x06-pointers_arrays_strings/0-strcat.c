@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * _strcat - 
@@ -9,23 +11,5 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char str1[100], str2[100];
-
-	*dest = str1;
-	*src = str2;
-
-	while (*dest)
-	{
-		dest++;
-	}
-
-	while (*src)
-	{
-		*dest = *src;
-		src++;
-		dest++;
-	}
-	*dest = '\0';
-
-	return (str1);
+	return (strcat(*dest, *src));
 }

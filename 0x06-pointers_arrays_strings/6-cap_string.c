@@ -8,7 +8,7 @@
  * Return: the resulting string
  */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i, j;
 	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};

@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdlib.h>
 #include <string.h>
-#include "holberton.h"
 
 /**
  * _strncat - concatenates n bytes from a string to another
@@ -20,6 +19,14 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 
 	if (strlen(src) > n)
+	{
+		while (src[j] != '\0' && j < n)
+		{
+			dest[i] = src[j];
+			i++;
+			j++;
+		}
+	} else
 	{
 		while (src[j] != '\0' && j < n)
 		{

@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		i = atoi(argv[1]);
 		j = atoi(argv[2]);
 
-		p = multiply(i,j);
+		p = multiply(i, j);
 		printf("%d\n", p);
 	}
 
@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 
 int multiply(int a, int b)
 {
-	return (a*b);
+	return (a * b);
 }

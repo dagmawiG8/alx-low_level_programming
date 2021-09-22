@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	int i, j, p;
 
-	if (argc != 3)
+	if(argc != 3)
 		printf("Error\n");
 
 	else
@@ -31,10 +31,10 @@ int main(int argc, char *argv[])
 }
 
 /**
-  * power - multiplies a and b
+  * multiply - multiplies a and b
   * @a: integer
   * @b: integer
-  * Return: a product
+  * Return: a product of a and b
   */
 
 int multiply(int a, int b)

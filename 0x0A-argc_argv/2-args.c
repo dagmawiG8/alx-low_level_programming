@@ -8,13 +8,14 @@
   * Return: 0 to indicate a good working of the program
   */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int i;
 
-	for (i = 0; i < argc; i++)
+	while(*argv != '\0')
 	{
-		printf("%s\n", argv[argc]);
+		printf("%s\n", *argv);
+		**arg++;
 	}
 
 	return (0);

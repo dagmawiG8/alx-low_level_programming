@@ -20,27 +20,27 @@ int **alloc_grid(int width, int height)
 	else
 	{
 		twoD = malloc(height * sizeof(int *));
-		while (i < height)
+		while (x < height)
 		{
-			twoD[i] = malloc(height * sizeof(int));
+			twoD[x] = malloc(height * sizeof(int));
 
-			if(!twoD[i])
+			if(!twoD[x])
 			{
-				free(twoD[i]);
+				free(twoD[x]);
 				return (NULL);
 			}
 
-			i++;
+			x++;
 		}
-		i = j = 0;
-		while (i < height)
+		x = x = 0;
+		while (x < height)
 		{
-			while (j < width)
+			while (x < width)
 			{
-				twoD[i][j] = 0;
-				j++;
+				twoD[x][y] = 0;
+				y++;
 			}
-			i++;
+			x++;
 		}
 	}
 	return (twoD);

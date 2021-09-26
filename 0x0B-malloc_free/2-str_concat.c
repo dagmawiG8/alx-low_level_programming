@@ -35,11 +35,11 @@ char *str_concat(char *s1, char *s2)
 			{
 				if (i <= sizeof(s1))
 				{
-					s[i] = s1[i];
+					str[i] = s1[i];
 				}
 				else
 				{
-					s[i] = s2[i - sizeof(s1)];
+					str[i] = s2[i - sizeof(s1)];
 				}
 				i++;
 			}

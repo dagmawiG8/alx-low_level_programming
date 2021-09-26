@@ -32,7 +32,7 @@ int **alloc_grid(int width, int height)
 
 			x++;
 		}
-		x = x = 0;
+		x = y = 0;
 		while (x < height)
 		{
 			while (x < width)

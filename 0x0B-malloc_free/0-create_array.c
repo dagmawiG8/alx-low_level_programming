@@ -6,7 +6,7 @@
   * create_array - fills memory with a constant byte
   * @size: is the size of the pointer
   * @c: is a letter
-  * Return - NULL or a pointer
+  * Return: NULL or a pointer
   */
 
 char *create_array(unsigned int size, char c)

@@ -1,4 +1,4 @@
-#ifndef ABS_A
-#define ABS_A
-#define ABS_A(N) ((N < 0) ? (-N):(N))
+#ifndef ABS
+#define ABS
+#define ABS(x) ((x < 0) ? (-x):(x))
 #endif

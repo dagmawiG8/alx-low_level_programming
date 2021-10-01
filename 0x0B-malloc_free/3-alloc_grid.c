@@ -11,37 +11,35 @@
 
 int **alloc_grid(int width, int height)
 {
-	int x = 0, y = 0, **twoD;
+	int **matriz;
+	int i, j;
 
-	if (width <= 0 || height <= 0)
-	{
+	if (width <= 0 || height <= 0 || (height == 1 && width == 1))
 		return (NULL);
-	}
-	else
+
+	matriz = malloc(height * sizeof(int *));
+	if (!matriz)
+		return (NULL);
+
+	for (i = 0; i < height ; i++)
 	{
-		twoD = malloc(height * sizeof(int *));
-		while (i < height)
-		{
-			twoD[i] = malloc(height * sizeof(int));
+		matriz[i] = malloc(width * sizeof(int));
 
-			if(!twoD[i])
-			{
-				free(twoD[i]);
-				return (NULL);
-			}
-
-			i++;
-		}
-		i = j = 0;
-		while (i < height)
+		if (!matriz[i])
 		{
-			while (j < width)
-			{
-				twoD[i][j] = 0;
-				j++;
-			}
-			i++;
+			for (i--; i >= 0; i--)
+				free(matriz[i]);
+
+			free(matriz);
+			return (NULL);
 		}
 	}
-	return (twoD);
+
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+			matriz[i][j] = 0;
+	}
+
+	return (matriz);
 }

@@ -22,6 +22,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 	}
 
-	var_end(li);
+	var_end(list);
 	printf("\n");
 }

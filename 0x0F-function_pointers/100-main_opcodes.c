@@ -1,17 +1,16 @@
-#include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints the opcodes of its own main function
- * @argc: number of arguments
- * @argv: number of bytes to pass in
- * Return: 0, 1, or 2
+ * main - prints opcode of own main function
+ * @argc: argument count
+ * @argv: array of arguments
+ * Return: 1 or 2 on fail, 0 on success
  */
 int main(int argc, char *argv[])
 {
 	int bytes, i;
-	char *mainptr;
-
-	mainptr = (char *)main;
+	unsigned char *func_ptr;
 
 	if (argc != 2)
 	{
@@ -24,10 +23,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < bytes - 1; i++)
+	func_ptr = (unsigned char *)main;
+	i = 0;
+	if (bytes > 0)
 	{
-		printf("%02hhx ", (*(mainptr + i)));
+		while (i < (bytes - 1))
+			printf("%02hhx ", func_ptr[i++]);
+		printf("%hhx\n", func_ptr[i]);
 	}
-	printf("%02hhx\n", (*(mainptr + i)));
 	return (0);
 }

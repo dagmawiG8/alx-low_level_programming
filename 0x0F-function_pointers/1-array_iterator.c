@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include "function_pointers.h"
-
+#include <stdlib.h>
 /**
   * array_iterator - fills memory with a constant byte
   * @size: size of the array

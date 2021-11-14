@@ -1,44 +1,28 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a text file and prints it to the
- * POSIX standard output
+ * create_file - creates a file
  * @filename: pointer to filename
- * @letters: bytes to print
- * Return: actual bytes printed
+ * @text_content: string that is appended to file
+ * Return: 1 on success, -1 on failure
  */
-size_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-	register int fd, r, w;
-	char *buffer = NULL;
+	register int fd, w, len = 0;
 
 	if (!filename)
-		return (0);
-	buffer = malloc(letters + 1);
-	if (!buffer)
-		return (0);
-	fd = open(filename, O_RDONLY);
+		return (-1);
+	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
+		return (-1);
+	if (text_content)
 	{
-		free(buffer);
-		return (0);
+		while (text_content[len])
+			len++;
+		w = write(fd, text_content, len);
+		if (w == -1)
+			return (-1);
 	}
-	r = read(fd, buffer, letters);
-	if (r == -1)
-	{
-		free(buffer);
-		close(fd);
-		return (0);
-	}
-	buffer[letters] = '\0';
-	w = write(STDOUT_FILENO, buffer, r);
-	if (w == -1)
-	{
-		free(buffer);
-		close(fd);
-		return (0);
-	}
-	free(buffer);
 	close(fd);
-	return (w);
+	return (1);
 }

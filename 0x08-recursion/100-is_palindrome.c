@@ -1,43 +1,43 @@
 #include "main.h"
-#include <string.h>
-#include <stdbool.h>
-
-int isPal(char *s, int start, int end);
-int is_Palindrome(char *s);
-
-/** isPal - set true or false for palindrome strin
- * @s: is the first address of memory of string
- * @ss: is the last address of memory of string
- * @cont: is the counter of string
- * Return: true or false if the string is palindrome
- */
-
-int isPal(char *s, int start, int end)
-{
-	if (start == end)
-		return (1);
-
-	if (s[start] != s[end] && size >= 0)
-		return (0);
-
-	if (start < end + 1)
-		return (isPal(s, start + 1, end -1));
-
-	return (1);
-}
-
+#include <stdio.h>
 /**
- * is_palindrome - set true or false for palindrome string
- * @s: is an address of memory
- * Return: true or false for palindrome string
+ * _strlen_recursion - returns the length of a string.
+ * @s: the string to count
+ * Return: length of the string
  */
-
+int _strlen_recursion(char *s)
+{
+	if (*s)
+	{
+		s++;
+		return (1 + _strlen_recursion(s));
+	}
+	return (0);
+}
+/**
+ * checker - helper function for is_palindrome
+ * @str: the string
+ * @len: length of string
+ * @count: counter of recursion
+ * Return: 1 if string is a palindrome, 0 if it is not.
+ */
+int checker(char *str, int len, int count)
+{
+	if (count >= len)
+		return (1);
+	if (str[len] == str[count])
+		return (checker(str, len - 1, count + 1));
+	return (0);
+}
+/**
+ * is_palindrome - checks if the string is a palindrome
+ * @s: the string to check
+ * Return: 1 if string is a palindrome, 0 if it is not.
+ */
 int is_palindrome(char *s)
 {
-	size = strlen(s);
+	int len = _strlen_recursion(s);
+	int count = 0;
 
-	if (n == 0)
-		return (1);
-
-	return (isPal(s, 0, size - 1));
+	return (checker(s, len - 1, count));
 }
